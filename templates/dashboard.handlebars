@@ -1,0 +1,20 @@
+<div id="objects">
+    <h1 id="heading">CityHome</h1>
+    
+    <div>
+        <div id="table-div" style="overflow-y:auto">
+            <table class="table" id="objects-table">
+                <thead id="table-headings">
+                    <th>Name: </th>
+                    <th>Type: </th>
+                    <th>State: </th>
+                </thead>
+                <tbody>
+                    {{#each objects}}
+                        {{> object-thumbnail}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
